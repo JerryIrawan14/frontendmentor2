@@ -1,0 +1,123 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+    overflow: hidden;
+    font-family: 'Figtree',sans-serif;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-color: hsl(0, 0%, 42%);
+    width: min-content;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow:6px 8px 0px 0px black;
+}
+.img-card{
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+.img-card > img{
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    box-shadow: 0 4px 8px hsl(0, 0%, 42%);
+}
+.text-card{
+    padding: 1.5rem;
+}
+button{
+    background-color: hsl(47, 88%, 63%);
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 7rem;
+    padding-top: none;
+    padding-bottom: none;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    box-shadow: none;
+}
+button > a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-weight: 800;
+}
+p{
+    color: hsl(0, 0%, 7%);
+}
+.paragraph-date{
+    color: hsl(0, 0%, 42%);
+}
+h1{
+    font-size: 1.5rem;
+}
+.bio-card{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 21rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+}
+.img-bio>img{
+    width: 3.5rem;
+}
+.text-bio> h1{
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-container{
+        width: 20rem;
+    }
+    .img-card{
+        padding: 0.5rem;
+    }
+    .img-card > img{
+        width: 17.5rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    button{
+        padding: 0.5;
+        width: 5.5rem;
+    }
+    button > a{
+        font-size: 0.8rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .bio-card{
+        width: 100%;
+        padding-left: 1.5rem;
+    }
+    .img-bio  > img{
+        width: 2.8rem;
+    }
+} 
